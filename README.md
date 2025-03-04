@@ -202,3 +202,27 @@ User jane_admin will be the Admin Account from now on
 <p>
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+<h3>Join Client-1 to your domain (mydomain.com)</h3>
+<p>
+  Login to Client-1 as the original local admin (labuser) and join it to the domain 
+  
+(computer will restart) 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/be254944-c0b8-44d0-b1b2-7ab074f37801" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/460dc007-76df-45f6-b190-234f913129c1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/4fa21af8-dc27-47e2-ae02-cf8a5bcfec79" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Login to the Domain Controller and Verify Client-1 shows up in ADUC 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/454d3d8a-08f8-4c9d-84d3-fdd249f55028" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Create a new OU named “_CLIENTS” and drag Client-1 into there
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/b25369fa-5226-4202-8006-de931a98b74a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
