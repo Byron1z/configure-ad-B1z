@@ -20,10 +20,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Resource Group
+- Create Virtual Network
+- Ensure Connectivity between the Client and Domain Controller
+- Install Active Directory
+- Create an Domain Admin Account
+- Join Client-1 to the Domain Controller (mydomain.com)
+- Setup Remote Desktop for non-administrative users on Client-1
+- Create additional users and attempt to log into client-1 with one of the users
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -225,4 +229,69 @@ User jane_admin will be the Admin Account from now on
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/b25369fa-5226-4202-8006-de931a98b74a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
+<p>
+  Log into Client-1 as mydomain.com\jane_admin 
+</p>
+<p>
+  <img src="https://i.imgur.com/RG0OK0o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Open system properties 
+  
+Click “Remote Desktop” 
+
+Allow “domain users” access to remote desktop 
+</p>
+<p>
+  <img src="https://i.imgur.com/irf2ryg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  You can now log into Client-1 as a normal, non-administrative user now 
+</p>
+<br />
+<h3>Now Create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
+<p>
+  Login to DC-1 as jane_admin 
+  
+Open PowerShell_ise as an Administrator 
+
+Create a new File and paste the contents of the script into it 
+
+Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
+
+Run the script and observe the accounts being created
+</p>
+<p>
+  <img src="https://i.imgur.com/rZcKc0d.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/CUNZvwM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  When finished, open ADUC and observe the accounts in the appropriate OU　
+  
+(_EMPLOYEES)
+</p>
+<p>
+   <img src="https://i.imgur.com/7UaNiRC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Now attempt to log into Client-1 with one of the user accounts we created with the script 
+  
+  (take note of the password in the script)
+</p>
+<p>
+  <img src="https://i.imgur.com/6ckcCZk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/3fyoSeK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/xpJO6bx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/2StvF6O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<p>
+  This tutorial was to help us have a better understanding Active Direectory and Domain Controllers, along with
+  understanding network security protocols through VM's within the Cloud.
+
+  When finished, Close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
+  this tutorial, and verify the Resource Group deletion to avoid unnecessary charges.
 </p>
