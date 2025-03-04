@@ -2,7 +2,7 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-<h1>On-premises Active Directory Deployed in the Cloud (Azure)</h1>
+<h1>On-Premises Active Directory Deployed in the Cloud (Azure)</h1>
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
@@ -107,3 +107,61 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   From the Azure Portal, restart Client-1.
 </p>
 <br />
+
+<h3>Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
+<p>
+  Attempt to ping DC-1’s private IP address 
+  
+● Ensure the ping succeeded 
+
+Open PowerShell ISE and ping DC-1 Private IP address
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  From Client-1, open PowerShell and run ipconfig /all 
+  
+● The output for the DNS settings should show DC-1’s private IP Address
+</p>
+<p>
+<img src="https://github.com/user-attachments/assets/90dbd91f-054d-4665-89a0-78ba49fd206a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Now Client-1 DNS Servers should show DC-1 Private IP Address.
+</p>
+<br />
+
+<h3>Install Active Directory</h3>
+<p>
+  Login to DC-1 and Install Active Directory Domain Services 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/c5ef2b12-351a-44b1-af30-b4468fab680b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Now Promote as a DC (Domain Controller): Setup a new forest as mydomain.com 
+  
+  (can be anything, just remember what it is) 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Click “Add a new Forest”, and name it “mydomain.com”
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Restart and then log back into DC-1 as user: mydomain.com\labuser
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+<h3>Create a Domain Admin User within the Domain</h3>
