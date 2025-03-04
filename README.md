@@ -256,7 +256,7 @@ Allow “domain users” access to remote desktop
 <p>
   Login to DC-1 as jane_admin 
   
-Open PowerShell_ise as an Administrator 
+Open PowerShell ISE as an Administrator 
 
 Create a new File and paste the contents of the script into it 
 
