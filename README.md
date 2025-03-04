@@ -289,7 +289,7 @@ Run the script and observe the accounts being created
 </p>
 <br />
 <p>
-  This tutorial was to help us have a better understanding Active Direectory and Domain Controllers, along with
+  This tutorial was to help us have a better understanding Active Directory and Domain Controllers, along with
   understanding network security protocols through VM's within the Cloud.
 
   When finished, Close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
