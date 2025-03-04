@@ -165,3 +165,40 @@ Open PowerShell ISE and ping DC-1 Private IP address
 </p>
 <br />
 <h3>Create a Domain Admin User within the Domain</h3>
+<p>
+  In Active Directory Users and Computers (ADUC), create an Organizational Unit 
+(OU) called “_EMPLOYEES” 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Create a new OU named “_ADMINS” 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/7e615a7e-6009-4fd2-b61f-3604da82d5ab" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123! 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/d37838c0-fd89-48ae-9162-f7f606a11e78" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Add jane_admin to the “Domain Admins” Security Group 
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Log out / close the connection to DC-1 and log back in as 
+  
+“mydomain.com\jane_admin” 
+
+User jane_admin will be the Admin Account from now on
+</p>
+<p>
+  <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
