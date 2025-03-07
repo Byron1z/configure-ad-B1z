@@ -74,6 +74,19 @@ After VM is created, set the Domain Controller’s NIC Private IP address to be 
 <p>
 <img src="https://i.imgur.com/0uCdkF7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+  Edit: In case if there's trouble when pinging DC-1 from Client-1 in Powershell in the later steps, go back into the 
+
+  Firewall Settings (in DC-1 vm) and
+
+  - Clicked On "Windows Defender Firewall Properties"
+
+  - Turn Off all of the firewall states, EXCEPT "Public Profile".
+
+  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and clicked "ALLOW"
+
+  This helped when I had trouble pinging DC-1 from Client-1.
+</p>
 <br />
 
 <h3> Setup Client-1 in Azure </h3>
