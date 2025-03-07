@@ -31,6 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
+<h3>Setup Azure Resources</h3>
 <p>
   Create a Resource Group 
 </p>
@@ -45,9 +46,8 @@ Create a Virtual Network and Subnet
 </p>
 <br />
 
-<p>
-  Create the Domain Controller VM (Windows Server 2022) named “DC-1” 
-  
+<h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1” </h3>
+<p> 
   Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the Virtual Network we made.
   
   ● Username: labuser 
@@ -59,7 +59,7 @@ Create a Virtual Network and Subnet
  <img src="https://github.com/user-attachments/assets/d411910a-f38b-48cd-b284-80d4b606d791" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-After VM is created, set the Domain Controller’s NIC Private IP address to be static, meaning the Private IP Address won’t change. 
+After VM is created, set the Domain Controller’s NIC Private IP address to be Static, meaning the Private IP Address won’t change. 
   
   This is because this server will act as a DNS server.
 </p>
@@ -90,6 +90,12 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 </p>
 <p>
   <img src="https://i.imgur.com/9Tt7JiZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+  Ensure that both VMs are in the same Vnet (you can check the Topology with Network Settings)
+</p>
+<p>
+  <img src="https://i.imgur.com/Kw5H63Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address.
