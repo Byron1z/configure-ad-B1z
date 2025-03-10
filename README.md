@@ -241,13 +241,13 @@ User jane_admin will be the Admin Account from now on
   Login to the Domain Controller and Verify Client-1 shows up in ADUC 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/454d3d8a-08f8-4c9d-84d3-fdd249f55028" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ndAcxiW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Create a new OU named “_CLIENTS” and drag Client-1 into there
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/b25369fa-5226-4202-8006-de931a98b74a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/OHOiZgq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
