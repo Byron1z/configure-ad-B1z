@@ -233,9 +233,9 @@ User jane_admin will be the Admin Account from now on
 (computer will restart) 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/be254944-c0b8-44d0-b1b2-7ab074f37801" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/460dc007-76df-45f6-b190-234f913129c1" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/4fa21af8-dc27-47e2-ae02-cf8a5bcfec79" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/y3MUjQ2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/mPpcVUd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/1eBxFN9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Login to the Domain Controller and Verify Client-1 shows up in ADUC 
