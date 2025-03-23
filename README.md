@@ -168,7 +168,7 @@ Open PowerShell ISE and ping DC-1 Private IP address
 
 <h3>Install Active Directory</h3>
 <p>
-  Login to DC-1 and Install Active Directory Domain Services 
+  Login to DC-1, head to Server Manager and Install Active Directory Domain Services 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -178,7 +178,7 @@ Open PowerShell ISE and ping DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now Promote as a DC (Domain Controller): Setup a new forest as mydomain.com 
+  Now Promote DC-1 as a DC (Domain Controller): Setup a new forest as mydomain.com 
   
   (can be anything, just remember what it is) 
 </p>
