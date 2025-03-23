@@ -59,20 +59,20 @@ Create a Virtual Network and Subnet
 
 <h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1” </h3>
 <p> 
-  Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the Virtual Network we made.
+  Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the same Virtual Network we made.
   
   ● Username: labuser 
   
   ● Password: Cyberlab123!
 </p>
 <p>
-<img src="https://i.imgur.com/OZn32ZK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <img src="https://github.com/user-attachments/assets/d411910a-f38b-48cd-b284-80d4b606d791" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/xwzAG8x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/dgniaoK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-After VM is created, set the Domain Controller’s NIC Private IP address to be Static, meaning the Private IP Address won’t change. 
+After VM is created, Set the Domain Controller’s NIC Private IP address to be Static, meaning the Private IP Address won’t change. 
   
-  This is because this server will act as a DNS server.
+  This is because this server will act as a DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/eXr0xTF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
@@ -113,7 +113,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   ● Password: Cyberlab123!
 </p>
 <p>
-  <img src="https://i.imgur.com/9Tt7JiZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/NVRLbrO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Ensure that both VMs are in the same Vnet (you can check the Topology with Network Settings)
