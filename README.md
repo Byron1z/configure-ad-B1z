@@ -31,6 +31,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Setup Remote Desktop for non-administrative users on Client-1
 - Create additional users and attempt to log into client-1 with one of the users
 
+<h2>What is Active Directory?</h2>
+<p>
+  <img src="https://i.imgur.com/R9hqfi1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<h3>Familiar Use</h3>
+<p>
+  <img src="https://i.imgur.com/3sOEH5y.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+
 <h2>Deployment and Configuration Steps</h2>
 
 <h3>Setup Azure Resources</h3>
