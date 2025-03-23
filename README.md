@@ -295,7 +295,7 @@ Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 Run the script and observe the accounts being created
 </p>
 <p>
-  <img src="https://i.imgur.com/rZcKc0d.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ZPbcX40.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/CUNZvwM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
@@ -312,10 +312,10 @@ Run the script and observe the accounts being created
   (take note of the password in the script)
 </p>
 <p>
-  <img src="https://i.imgur.com/6ckcCZk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/uJldo10.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/3fyoSeK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/xpJO6bx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/2StvF6O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/WRyd7pe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <p>
