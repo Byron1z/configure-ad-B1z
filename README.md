@@ -33,7 +33,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>What is Active Directory?</h2>
 <p>
-  <img src="https://i.imgur.com/R9hqfi1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/gLlT8B8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>Familiar Use</h3>
 <p>
