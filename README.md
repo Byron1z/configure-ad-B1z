@@ -168,7 +168,7 @@ Open PowerShell ISE and ping DC-1 Private IP address
 
 <h3>Install Active Directory</h3>
 <p>
-  Login to DC-1, head to Server Manager and Install Active Directory Domain Services 
+  Login to DC-1, go to Server Manager and Install Active Directory Domain Services 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
