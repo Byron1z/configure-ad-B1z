@@ -41,11 +41,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
-  In this Active Directory Lab we'll create two VMs in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory Services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
+  In this Active Directory Lab we'll create two VMs in Azure and in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory Services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
 
 <h2>Deployment and Configuration Steps</h2>
 
