@@ -41,7 +41,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>What we'll do (Active Directory Lab)</h3>
 <p>
-  In this Active Directory Lab we'll create two VMs in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
+  In this Active Directory Lab we'll create two VMs in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory Services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -129,7 +129,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/Kw5H63Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  After VM is created, set Client-1’s DNS settings to DC-1’s Private IP address.
+  After VM is created, Set Client-1’s DNS settings to DC-1’s Private IP address.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="80%" width="80%" alt="Disk Sanitization Steps"/>
