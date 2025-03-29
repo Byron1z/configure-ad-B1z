@@ -39,6 +39,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/SHwtjAg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<h3>What we'll do (Active Directory Lab)</h3>
+<p>
+  In this Active Directory Lab we'll create two VMs in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
+</p>
+<p>
+  <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
 
 <h2>Deployment and Configuration Steps</h2>
 
@@ -178,7 +185,7 @@ Open PowerShell ISE and ping DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now Promote DC-1 as a DC (Domain Controller): Setup a new forest as mydomain.com 
+  Now Promote DC-1 as a DC (Domain Controller): Setup a new forest as "mydomain.com"
   
   (can be anything, just remember what it is) 
 </p>
