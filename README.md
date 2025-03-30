@@ -146,7 +146,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/xpUQSkV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From the Azure Portal, restart Client-1.
+  From the Azure Portal, Restart Client-1.
 </p>
 <br />
 
