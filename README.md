@@ -108,7 +108,7 @@ After VM is created, Set the Domain Controller’s NIC Private IP address to be 
 </p>
 <br />
 
-<h3> Setup Client-1 in Azure </h3>
+<h3> Setup "Client-1" (Windows 10 Pro) VM in Azure </h3>
 <p>
 Create the Client VM (Windows 10 Pro) named “Client-1” 
   
