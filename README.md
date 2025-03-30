@@ -29,7 +29,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Create an Domain Admin Account
 - Join Client-1 to the Domain Controller (mydomain.com)
 - Setup Remote Desktop for non-administrative users on Client-1
-- Create additional users and attempt to log into client-1 with one of the users
+- Create additional users and attempt to log into Client-1 with one of the users
 
 <h2>What is Active Directory?</h2>
 <p>
@@ -156,7 +156,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   
 ● Ensure the ping succeeded 
 
-Open PowerShell ISE and ping DC-1 Private IP address
+Open PowerShell ISE and Ping DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -164,13 +164,13 @@ Open PowerShell ISE and ping DC-1 Private IP address
 <p>
   From Client-1, open PowerShell and run ipconfig /all 
   
-● The output for the DNS settings should show DC-1’s private IP Address
+● The output for the Client-1's DNS settings should show DC-1’s Private IP Address
 </p>
 <p>
 <img src="https://github.com/user-attachments/assets/90dbd91f-054d-4665-89a0-78ba49fd206a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now Client-1 DNS Servers should show DC-1 Private IP Address.
+  Now Client-1's DNS Servers should show DC-1 Private IP Address.
 </p>
 <br />
 
