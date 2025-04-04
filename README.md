@@ -152,17 +152,17 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 <h3>Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
 <p>
-  Attempt to ping DC-1’s private IP address 
+  Attempt to ping DC-1’s Private IP address 
   
-● Ensure the ping succeeded 
+● Ensure the Ping succeeded 
 
-Open PowerShell ISE and Ping DC-1 Private IP address
+Open PowerShell ISE and Ping the DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From Client-1, open PowerShell and run ipconfig /all 
+  From Client-1, open PowerShell and run "ipconfig /all" 
   
 ● The output for the Client-1's DNS settings should show DC-1’s Private IP Address
 </p>
