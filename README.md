@@ -41,7 +41,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
-  In this Active Directory Lab we'll create two VMs in Azure and in the same VNET. One will be a Domain Controller, the other will be a Client machine. We will change the DC to a static IP because it will offer Active Directory Services to the Client machine. For that, the Client machine will have to join to the Domain. We then have to change the DNS settings on the Client machine, the Client machine will use the DC as its DNS Server.
+  In this Active Directory Lab, we'll create two VMs in Azure and in the same VNET. One will be a DC (Domain Controller), and the other will be a Client machine. We will change the DC to a static IP address because it will offer Active Directory Services to the Client's machine. For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC(Domain Controller) as its DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -94,7 +94,7 @@ After VM is created, Set the Domain Controller’s NIC Private IP address to be 
 <img src="https://i.imgur.com/0uCdkF7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Edit: In case if there's trouble when pinging DC-1 from Client-1 in Powershell in the later steps, go back into the 
+  Edit: In case if there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
   Firewall Settings (in DC-1 vm) and
 
