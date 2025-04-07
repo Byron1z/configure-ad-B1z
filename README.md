@@ -164,7 +164,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 <h3>Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
 <p>
-  Attempt to ping DC-1’s Private IP address 
+  From Client-1, attempt to ping DC-1’s Private IP address 
   
 ● Ensure the Ping succeeded 
 
