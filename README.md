@@ -168,7 +168,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   
 ● Ensure the Ping succeeded 
 
-Open PowerShell ISE and Ping the DC-1 Private IP address
+Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
