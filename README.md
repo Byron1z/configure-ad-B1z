@@ -254,6 +254,8 @@ User jane_admin will be the Admin Account from now on
 <h3>Join Client-1 to your domain (mydomain.com)</h3>
 <p>
   Login to Client-1 as the original local admin (labuser) and join it to the domain 
+
+  Go to System -> About -> Rename this PC(advanced) -> Computer Name -> Change -> Domain
   
 (computer will restart) 
 </p>
