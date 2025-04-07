@@ -41,7 +41,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
-  In this Active Directory Lab, we'll create 2 VMs in Azure and in the same VNET. One will be a DC (Domain Controller), and the other will be a Client machine. We will change the DC to a static IP address because it will offer Active Directory Services to the Client's machine. For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC (Domain Controller) as its DNS Server.
+  In this Active Directory Lab, we'll create 2 VMs in Azure and on the same VNET (Virtual Network). One will be a DC (Domain Controller), and the other will be a Client machine. We will change the DC to a static IP address because it will offer Active Directory Services to the Client's machine. For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC (Domain Controller) as its DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -64,7 +64,7 @@ Create a Virtual Network and Subnet
   <img src="https://github.com/user-attachments/assets/a4259798-ae22-427d-a70d-c4b1fa95d28a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  We will log into the 2 VM's through the Remote Desktop app using the VMs' Public IP Addresses. 
+  We will log into the 2 VM's through the Remote Desktop app on your PC using the VMs' Public IP Addresses. 
 </p>
 <p>
   <img src="https://i.imgur.com/UFdri8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -73,7 +73,7 @@ Create a Virtual Network and Subnet
 
 <h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1” </h3>
 <p> 
-  Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the same Virtual Network we made.
+  Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the Same Virtual Network we made.
   
   ● Username: labuser 
   
@@ -84,7 +84,7 @@ Create a Virtual Network and Subnet
  <img src="https://i.imgur.com/dgniaoK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-After VM is created, Set the Domain Controller’s NIC Private IP address to be Static, meaning the Private IP Address won’t change. 
+After creating the VM, set the domain controller’s NIC private IP address to static, meaning the private IP address won’t change. 
   
   This is because this server will act as a DNS Server.
 </p>
