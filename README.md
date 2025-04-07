@@ -52,6 +52,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Setup Azure Resources</h3>
 <p>
+  We'll be using Microsoft Azure, so log into your Azure Account
+</p>
+<p>
+  <img src="https://i.imgur.com/KS5Ad2k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
   Create a Resource Group 
 </p>
 <p>
