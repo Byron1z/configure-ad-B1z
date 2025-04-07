@@ -77,7 +77,7 @@ Create a Virtual Network and Subnet
 </p>
 <br />
 
-<h3>Create the Domain Controller VM (Windows Server 2022) named “DC-1” </h3>
+<h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1” </h3>
 <p> 
   Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the Same Virtual Network we made.
   
