@@ -13,6 +13,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows 10 Pro (22H2)
 - Remote Desktop
 - Active Directory Domain Services
+- Active Directory Users and Computers (ADUC)
 - PowerShell
 
 <h2>Operating Systems Used </h2>
