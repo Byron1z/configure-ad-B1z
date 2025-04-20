@@ -91,7 +91,9 @@ Create a Virtual Network and Subnet
  <img src="https://i.imgur.com/dgniaoK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-After creating the VM, set the domain controller’s NIC private IP address to static, meaning the private IP address won’t change. 
+After creating the VM, set the domain controller’s NIC private IP address to static, meaning the private IP address won’t change.
+
+  Go to DC-1's Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion
   
   This is because this server will act as a DNS Server.
 </p>
@@ -341,9 +343,12 @@ Run the script and observe the accounts being created
   <img src="https://i.imgur.com/WRyd7pe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+<h3>Conclusion</h3>
 <p>
+For this Active Directory lab, we successfully completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a Forest, an Domain Administrator account, and joining Client-1 to the Domain.
+  
   This tutorial was to help us have a better understanding Active Directory and Domain Controllers, along with
-  understanding network security protocols through VM's within the Cloud.
+  Understanding network security protocols through VM's within Azure's Cloud.
 
   When finished, Close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
   this tutorial, and verify the Resource Group deletion to avoid unnecessary charges.
