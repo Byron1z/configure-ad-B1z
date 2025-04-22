@@ -111,7 +111,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 <p>
   Edit: In case if there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
-  Firewall Settings (in DC-1 vm) and
+  Firewall Settings (in DC-1 VM) and
 
   - Clicked On "Windows Defender Firewall Properties"
 
