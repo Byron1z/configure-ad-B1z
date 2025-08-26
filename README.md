@@ -109,7 +109,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Edit: In case if there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
+  Edit: In case there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
   Firewall Settings (in DC-1 VM) and
 
@@ -218,7 +218,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Create a Domain Admin User within the Domain</h3>
@@ -257,7 +257,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 User jane_admin will be the Admin Account from now on
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Join Client-1 to your domain (mydomain.com)</h3>
