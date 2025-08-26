@@ -34,18 +34,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>What is Active Directory?</h2>
 <p>
-  <img src="https://i.imgur.com/gLlT8B8.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/gLlT8B8.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>Familiar Use</h3>
 <p>
-  <img src="https://i.imgur.com/SHwtjAg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/SHwtjAg.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
   In this Active Directory Lab, we'll create 2 VMs in Azure and on the same VNET (Virtual Network). One will be a DC (Domain Controller), and the other will be a Client machine. We will change the DC to a static IP address because it will offer Active Directory Services to the Client's machine. For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC (Domain Controller) as its DNS Server.
 </p>
 <p>
-  <img src="https://i.imgur.com/SuvHoB1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/SuvHoB1.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -53,7 +53,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h3>Setup Azure Resources</h3>
 <p>
-  We'll be using Microsoft Azure, so log into your Azure Account.
+  We'll be using Microsoft Azure, so log in to your Azure Account.
 </p>
 <p>
   <img src="https://i.imgur.com/KS5Ad2k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -62,19 +62,19 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Create a Resource Group 
 </p>
 <p>
-<img src="https://i.imgur.com/sweX6x4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/sweX6x4.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Create a Virtual Network and Subnet
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/a4259798-ae22-427d-a70d-c4b1fa95d28a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/a4259798-ae22-427d-a70d-c4b1fa95d28a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   We will log into the 2 VM's through the Remote Desktop app on your PC using the VMs' Public IP Addresses. 
 </p>
 <p>
-  <img src="https://i.imgur.com/UFdri8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/UFdri8J.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
@@ -87,8 +87,8 @@ Create a Virtual Network and Subnet
   ● Password: Cyberlab123!
 </p>
 <p>
-<img src="https://i.imgur.com/xwzAG8x.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
- <img src="https://i.imgur.com/dgniaoK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+<img src="https://i.imgur.com/xwzAG8x.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+ <img src="https://i.imgur.com/dgniaoK.png" height="100%" width="100%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
 After creating the VM, set the domain controller’s NIC private IP address to static, meaning the private IP address won’t change.
@@ -98,7 +98,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
   This is because this server will act as a DNS Server.
 </p>
 <p>
-  <img src="https://i.imgur.com/eXr0xTF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/> 
+  <img src="https://i.imgur.com/eXr0xTF.png" height="100%" width="90%" alt="Disk Sanitization Steps"/> 
 </p>
 <br />
 
@@ -106,7 +106,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
   Log into DC-1 VM and disable the Windows Firewall (for Testing Connectivity)
 </p>
 <p>
-<img src="https://i.imgur.com/0uCdkF7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Edit: In case if there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
@@ -115,7 +115,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 
   - Clicked On "Windows Defender Firewall Properties"
 
-  - Turn Off all of the firewall states, EXCEPT "Public Profile".
+  - Turn off all of the firewall states, EXCEPT "Public Profile".
 
   - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and clicked "ALLOW"
 
@@ -127,7 +127,7 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 <p>
 Create the Client VM (Windows 10 Pro) named “Client-1” 
   
-  Again, Attach it to the same Region and Virtual Network as "DC-1"
+  Again, attach it to the same Region and Virtual Network as "DC-1"
 
   Give it the same Username & Password as DC-1, for convenience
   
@@ -136,19 +136,19 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   ● Password: Cyberlab123!
 </p>
 <p>
-  <img src="https://i.imgur.com/NVRLbrO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/NVRLbrO.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Ensure that both VMs are in the same Vnet (you can check the Topology with Network Settings)
 </p>
 <p>
-  <img src="https://i.imgur.com/Kw5H63Z.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/Kw5H63Z.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   After VM is created, Set Client-1’s DNS settings to DC-1’s Private IP address.
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="100%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Copy Private IP Address from DC-1 VM
@@ -158,7 +158,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   Doing this allows Client-1 to join the Domain.
 </p>
 <p>
-  <img src="https://i.imgur.com/xpUQSkV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   From the Azure Portal, Restart Client-1.
@@ -174,7 +174,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   From Client-1, open PowerShell and run "ipconfig /all" 
@@ -182,23 +182,23 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 ● The output for the Client-1's DNS settings should show DC-1’s Private IP Address
 </p>
 <p>
-<img src="https://github.com/user-attachments/assets/90dbd91f-054d-4665-89a0-78ba49fd206a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/90dbd91f-054d-4665-89a0-78ba49fd206a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now Client-1's DNS Servers should show DC-1 Private IP Address.
+  Now Client-1's DNS Servers should show DC-1's Private IP Address.
 </p>
 <br />
 
 <h3>Install Active Directory</h3>
 <p>
-  Login to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install Active Directory Domain Services. At "Confirmation", check restart if required. 
+  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install Active Directory Domain Services. At "Confirmation", check restart if required. 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/c5ef2b12-351a-44b1-af30-b4468fab680b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c5ef2b12-351a-44b1-af30-b4468fab680b" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Click the Flag on the top right, and Promote DC-1 as a DC (Domain Controller): Setup a new forest as "mydomain.com"
@@ -206,19 +206,19 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   (can be named anything, just remember what it is) 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Click “Add a new Forest”, and name it “mydomain.com”
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Restart and then log back into DC-1 as user: mydomain.com\labuser
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Create a Domain Admin User within the Domain</h3>
@@ -227,27 +227,27 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 (OU) called “_EMPLOYEES” 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Create a new OU named “_ADMINS” 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/7e615a7e-6009-4fd2-b61f-3604da82d5ab" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/7e615a7e-6009-4fd2-b61f-3604da82d5ab" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Create a new employee named “Jane Doe” (same password) with the username of “jane_admin” / Cyberlab123! 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/d37838c0-fd89-48ae-9162-f7f606a11e78" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/d37838c0-fd89-48ae-9162-f7f606a11e78" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Add jane_admin to the “Domain Admins” Security Group 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Log out / close the connection to DC-1 and log back in as 
@@ -257,12 +257,12 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 User jane_admin will be the Admin Account from now on
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Join Client-1 to your domain (mydomain.com)</h3>
 <p>
-  Login to Client-1 as the original local admin (labuser) and join it to the domain 
+  Log in to Client-1 as the original local admin (labuser) and join it to the domain 
 
   Go to System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain
 
@@ -271,21 +271,21 @@ User jane_admin will be the Admin Account from now on
 (computer will restart) 
 </p>
 <p>
-  <img src="https://i.imgur.com/y3MUjQ2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/mPpcVUd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/1eBxFN9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/y3MUjQ2.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/mPpcVUd.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/1eBxFN9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Login to the Domain Controller and Verify Client-1 shows up in ADUC 
+  Log in to the Domain Controller and Verify Client-1 shows up in ADUC 
 </p>
 <p>
-  <img src="https://i.imgur.com/ndAcxiW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Create a new OU named “_CLIENTS” and drag Client-1 into there
 </p>
 <p>
-  <img src="https://i.imgur.com/OHOiZgq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/OHOiZgq.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
@@ -293,7 +293,7 @@ User jane_admin will be the Admin Account from now on
   Log into Client-1 as mydomain.com\jane_admin 
 </p>
 <p>
-  <img src="https://i.imgur.com/RG0OK0o.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/RG0OK0o.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Open system properties 
@@ -303,13 +303,13 @@ Click “Remote Desktop”
 Allow “domain users” access to remote desktop 
 </p>
 <p>
-  <img src="https://i.imgur.com/irf2ryg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/irf2ryg.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  You can now log into Client-1 as a normal, non-administrative user now 
+  You can now log into Client-1 as a normal, non-administrative user. 
 </p>
 <br />
-<h3>Now Create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
+<h3>Now, Create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
 <p>
   Login to DC-1 as jane_admin 
   
@@ -322,8 +322,8 @@ Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 Run the script and observe the accounts being created
 </p>
 <p>
-  <img src="https://i.imgur.com/ZPbcX40.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/CUNZvwM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/ZPbcX40.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/CUNZvwM.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   When finished, open ADUC and observe the accounts in the appropriate OU　
@@ -331,7 +331,7 @@ Run the script and observe the accounts being created
 (_EMPLOYEES)
 </p>
 <p>
-   <img src="https://i.imgur.com/7UaNiRC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+   <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Now attempt to log into Client-1 with one of the user accounts we created with the script 
@@ -339,10 +339,10 @@ Run the script and observe the accounts being created
   (take note of the password in the script)
 </p>
 <p>
-  <img src="https://i.imgur.com/uJldo10.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/3fyoSeK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/xpJO6bx.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-  <img src="https://i.imgur.com/WRyd7pe.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/uJldo10.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/3fyoSeK.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/xpJO6bx.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/WRyd7pe.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 <h3>Conclusion</h3>
@@ -350,7 +350,7 @@ Run the script and observe the accounts being created
 For this Active Directory lab, we successfully completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a Forest, an Domain Administrator account, and joining Client-1 to the Domain.
   
   This tutorial was to help us have a better understanding Active Directory and Domain Controllers, along with
-  Understanding network security protocols through VM's within Azure's Cloud.
+  Understanding network security protocols through VMs within Azure's Cloud.
 
   When finished, Close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
   this tutorial, and verify the Resource Group deletion to avoid unnecessary charges.
