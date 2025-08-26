@@ -74,7 +74,7 @@ Create a Virtual Network and Subnet
   We will log into the 2 VM's through the Remote Desktop app on your PC using the VMs' Public IP Addresses. 
 </p>
 <p>
-  <img src="https://i.imgur.com/UFdri8J.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/UFdri8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
