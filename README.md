@@ -117,7 +117,7 @@ Here's trivia on Static IP Addresses,
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Troubleshooting!
+  Troubleshooting❗
   
   In case there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
@@ -171,7 +171,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Troubleshooting!
+  Troubleshooting❗
   
   During the lab, I had trouble saving Client-1's DNS settings to point to DC-1's Private IP Address. Here's what to do if this error appears in Azure VMs.
 
