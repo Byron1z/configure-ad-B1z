@@ -357,13 +357,17 @@ Allow “domain users” access to remote desktop
   You can now log into Client-1 as a normal, non-administrative user. 
 </p>
 <br />
-<h3>Now, Create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
+<h3>Now, create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
 <p>
-  Login to DC-1 as jane_admin 
-  
-Open PowerShell ISE as an Administrator 
+  Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users in the Domain.
 
-Create a new File and paste the contents of the script into it 
+  The script will be input into PowerShell ISE. After the users are created, select a random one and use RDP to log into Client-1.
+  
+  Login to DC-1 as "jane_admin", 
+  
+Open PowerShell ISE as an Administrator,
+
+Create a new File and paste the contents of the script into it,
 
 Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
@@ -374,7 +378,7 @@ Run the script and observe the accounts being created
   <img src="https://i.imgur.com/CUNZvwM.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  When finished, open ADUC and observe the accounts in the appropriate OU　
+  When finished, open ADUC and observe the accounts in the appropriate OU (Organizational Unit).　
   
 (_EMPLOYEES)
 </p>
@@ -382,9 +386,9 @@ Run the script and observe the accounts being created
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now attempt to log into Client-1 with one of the user accounts we created with the script 
+  Now, attempt to log into Client-1 with one of the user accounts we created with the script. 
   
-  (take note of the password in the script)
+  (Take note of the password in the script)
 </p>
 <p>
   <img src="https://i.imgur.com/uJldo10.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
