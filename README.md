@@ -34,11 +34,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>What is Active Directory?</h2>
 <p>
-  <img src="https://i.imgur.com/gLlT8B8.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/gLlT8B8.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>Familiar Use</h3>
 <p>
-  <img src="https://i.imgur.com/SHwtjAg.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/SHwtjAg.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
@@ -47,7 +47,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC (Domain Controller) as its DNS Server.
 </p>
 <p>
-  <img src="https://i.imgur.com/SuvHoB1.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/SuvHoB1.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
