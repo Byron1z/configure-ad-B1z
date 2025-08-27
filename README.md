@@ -73,16 +73,16 @@ Create a Virtual Network and Subnet
   <img src="https://github.com/user-attachments/assets/a4259798-ae22-427d-a70d-c4b1fa95d28a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  We will log into the 2 VM's through the Remote Desktop app on your PC using the VMs' Public IP Addresses. 
+  We will log in to the 2 VMs through the Remote Desktop app on your PC using the VMs' Public IP Addresses. 
 </p>
 <p>
-  <img src="https://i.imgur.com/UFdri8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+  <img src="https://i.imgur.com/UFdri8J.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
 <h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1” </h3>
 <p> 
-  Make sure to create the VM in the Same Region as your Virtual Network and make sure the VM is in the Same Virtual Network we made.
+  Make sure to create the VM in the same Region as your Virtual Network and that the VM is in the same Virtual Network we created.
   
   ● Username: labuser 
   
@@ -151,7 +151,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/NVRLbrO.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Ensure that both VMs are in the same Vnet (you can check the Topology with Network Settings)
+  Ensure that both VMs are in the same Vnet (you can check the Topology with Network Settings),
 </p>
 <p>
   <img src="https://i.imgur.com/Kw5H63Z.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -160,7 +160,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   After VM is created, Set Client-1’s DNS settings to DC-1’s Private IP address.
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="100%" width="90%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Copy Private IP Address from DC-1 VM
