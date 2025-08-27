@@ -295,7 +295,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Log out / close the connection to DC-1 and log back in as 
@@ -308,13 +308,13 @@ User jane_admin will be the Admin Account from now on
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
-<h3>Join Client-1 to your domain (mydomain.com)</h3>
+<h3>Join Client-1 to your Domain (mydomain.com)</h3>
 <p>
-  Log in to Client-1 as the original local admin (labuser) and join it to the domain 
+  Log in to Client-1 as the original local admin (labuser) and join it to the Domain.
 
   Go to System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain
 
-  Then log in as the Domain Admin with Login credentials and password
+  Then log in as the Domain Admin with the Login credentials and password,
   
 (computer will restart) 
 </p>
@@ -324,7 +324,7 @@ User jane_admin will be the Admin Account from now on
   <img src="https://i.imgur.com/1eBxFN9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Log in to the Domain Controller and Verify Client-1 shows up in ADUC 
+  Log in to the Domain Controller and verify Client-1 shows up in ADUC,
 </p>
 <p>
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
