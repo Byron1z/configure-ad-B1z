@@ -91,7 +91,15 @@ Create a Virtual Network and Subnet
  <img src="https://i.imgur.com/dgniaoK.png" height="100%" width="100%" alt="Disk Sanitization Steps"/> 
 </p>
 <p>
-After creating the VM, set the domain controller’s NIC private IP address to static, meaning the private IP address won’t change.
+After creating the VM, set the domain controller’s NIC private IP address to "Static", meaning the private IP address won’t change.
+
+Here's trivia on Static IP Addresses, 
+
+- Static IP addresses provide consistent network identification, which is crucial for servers, network devices, and services that need to be reliably accessible.
+  
+- They simplify DNS management, as the IP address does not change, reducing the risk of connectivity issues. Static IPs are also essential for remote access, hosting websites, and running email servers, as they ensure that external devices can consistently connect to the correct address.
+
+-  However, they require manual configuration and management, which can be more time-consuming compared to dynamic IP addresses.
 
   Go to DC-1's Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion
   
@@ -109,7 +117,9 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Edit: In case there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
+  Troubleshooting!
+  
+  In case there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
   Firewall Settings (in DC-1 VM) and
 
@@ -123,13 +133,13 @@ After creating the VM, set the domain controller’s NIC private IP address to s
 </p>
 <br />
 
-<h3> Setup "Client-1" (Windows 10 Pro) VM in Azure </h3>
+<h3>Setup "Client-1" (Windows 10 Pro) VM in Azure</h3>
 <p>
 Create the Client VM (Windows 10 Pro) named “Client-1” 
   
   Again, attach it to the same Region and Virtual Network as "DC-1"
 
-  Give it the same Username & Password as DC-1, for convenience
+  Give it the same Username & Password as DC-1, for convenience,
   
   ● Username: labuser 
   
@@ -153,15 +163,51 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 <p>
   Copy Private IP Address from DC-1 VM
   
-  Go to Client-1, Networking -> Network Settings -> Network Interface/IP Configuration -> DNS servers -> Custom and paste to DC-1's Private IP Address. 
+  In the Azure portal, navigate to Client-1 VM, Networking -> Network Settings -> Client-1's Network Interface/IP Configuration -> DNS servers -> Custom, and paste the DC-1's Private IP Address, then click save. 
   
-  Doing this allows Client-1 to join the Domain.
+  Doing this allows Client-1 to join the DC-1's DNS server.
 </p>
 <p>
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From the Azure Portal, Restart Client-1.
+  Troubleshooting!
+  
+  During the lab, I had trouble saving Client-1's DNS settings to point to DC-1's Private IP Address. Here's what to do if this error appears in Azure VMs.
+
+  <img src="https://i.imgur.com/2DaMFi8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+
+  For this issue, check Network Security Group (NSG) Rules: Make sure any Network Security Group (NSG) rules allow traffic on (DNS) port 53 from Client-1 to DC-1. 
+  
+  If traffic is restricted, Client-1 won’t be able to resolve the domain through DC-1.
+
+  To do this, do the following steps:
+  
+1. Search for "Network security groups" in Azure and click into "Network security groups" when it comes up. Not the classic version.
+
+2. Click into "client-1-nsg" (or whatever it's named) and do the following steps:
+
+    - Click the "Settings" dropdown menu
+
+    - Click "Inbound security rules"
+
+    - Click "Add"
+
+    - Leave everything alone except in the "Destination port ranges" field; change the number to 53, and in the "Priority" field, change it to 290,
+
+    - Click the "Save" button
+
+    - Then click "Outbound security rules" and complete the same process again,
+
+3. Then click into "dc-1-nsg" (for DC-1's VM) and do the same process again.
+
+4. Go to "Virtual Machines"
+
+5. Click the checkbox next to "Client-1" and "DC-1" and click "Restart" in the top bar,
+
+  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1.)
+
+  Also, restart DC-1 again just in case.
 </p>
 <br />
 
