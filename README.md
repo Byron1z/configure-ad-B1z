@@ -42,7 +42,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>What we'll do - (Active Directory Lab)</h3>
 <p>
-  In this Active Directory Lab, we'll create 2 VMs in Azure and on the same VNET (Virtual Network). One will be a DC (Domain Controller), and the other will be a Client machine. We will change the DC to a Static IP address because it will offer Active Directory Services to the Client's machine.
+  In this Active Directory Lab, we'll create 2 VMs in Azure and on the same VNET (Virtual Network). One will be the DC (Domain Controller), and the other will be a Client machine. We will change the DC to a Static IP address because it will offer Active Directory Services to the Client's machine.
   
   For that, the Client machine will have to join the Domain. We then have to change the DNS settings on the Client machine so that the Client machine will use the DC (Domain Controller) as its DNS Server.
 </p>
@@ -288,21 +288,21 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/d37838c0-fd89-48ae-9162-f7f606a11e78" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="80%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Add jane_admin to the “Domain Admins” Security Group 
+  Add "jane_admin" to the “Domain Admins” Security Group 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="80%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Log out / close the connection to DC-1 and log back in as 
   
 “mydomain.com\jane_admin” 
 
-User jane_admin will be the Admin Account from now on
+User jane_admin will be the Admin Account from now on.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
