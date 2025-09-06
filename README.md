@@ -129,7 +129,7 @@ Here's trivia on Static IP Addresses,
 
   - Turn off all of the firewall states, EXCEPT "Public Profile".
 
-  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and clicked "ALLOW"
+  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and click "ALLOW"
 
   This helped when I had trouble pinging DC-1 from Client-1.
 </p>
@@ -207,7 +207,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 5. Click the checkbox next to "Client-1" and "DC-1" and click "Restart" in the top bar,
 
-  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1)
+  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1.)
 
   Also, restart DC-1 again just in case.
 </p>
@@ -348,7 +348,7 @@ User "jane_admin" will be the Admin Account from now on.
   
 Click “Remote Desktop” 
 
-Allow “domain users” access to remote desktop 
+Allow “Domain Users” access to the remote desktop 
 </p>
 <p>
   <img src="https://i.imgur.com/irf2ryg.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
