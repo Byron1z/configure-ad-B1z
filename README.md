@@ -361,7 +361,7 @@ Allow “domain users” access to remote desktop
 <p>
   Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users in the Domain.
 
-  The script will be input into PowerShell ISE. After the users are created, select a random one and use RDP to log into Client-1.
+  The script will be input into PowerShell ISE as Administrator. After the users are created, select a random user and use RDP (Remote Desktop) to log into Client-1.
   
   Login to DC-1 as "jane_admin", 
   
@@ -371,16 +371,16 @@ Create a new File and paste the contents of the script into it,
 
 Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
-Run the script and observe the accounts being created
+Run the script and observe the accounts being created,
 </p>
 <p>
   <img src="https://i.imgur.com/ZPbcX40.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
   <img src="https://i.imgur.com/CUNZvwM.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  When finished, open ADUC and observe the accounts in the appropriate OU (Organizational Unit).　
+  When finished, open ADUC and observe the accounts in the appropriate OU (Organizational Unit), which was the "EMPLOYEES" OU.　
   
-(_EMPLOYEES)
+("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU in ADUC)
 </p>
 <p>
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
