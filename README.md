@@ -179,7 +179,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
   <img src="https://i.imgur.com/2DaMFi8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
-  For this issue, check Network Security Group (NSG) Rules: Make sure any Network Security Group (NSG) rules allow traffic on (DNS) port 53 from Client-1 to DC-1. 
+  For this issue, verify the Network Security Group (NSG) Rules: Make sure that any Network Security Group (NSG) rules permit traffic on port 53 (DNS) from Client-1 to DC-1. 
   
   If traffic is restricted, Client-1 won’t be able to resolve the domain through DC-1.
 
@@ -195,7 +195,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
     - Click "Add"
 
-    - Leave everything alone except in the "Destination port ranges" field; change the number to 53, and in the "Priority" field, change it to 290,
+    - Leave everything alone except in the "Destination port ranges" field; change the number to 53, and in the "Priority" field, change it to 290.
 
     - Click the "Save" button
 
@@ -278,7 +278,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Create a new OU named “_ADMINS” 
+  Then create a new OU named “_ADMINS” 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/7e615a7e-6009-4fd2-b61f-3604da82d5ab" height="100%" width="100%" alt="Disk Sanitization Steps"/>
