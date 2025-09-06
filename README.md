@@ -207,7 +207,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 5. Click the checkbox next to "Client-1" and "DC-1" and click "Restart" in the top bar,
 
-  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1.)
+  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1)
 
   Also, restart DC-1 again just in case.
 </p>
@@ -302,7 +302,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
 “mydomain.com\jane_admin” 
 
-User jane_admin will be the Admin Account from now on.
+User "jane_admin" will be the Admin Account from now on.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
