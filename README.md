@@ -279,12 +279,12 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   - This group is part of the Administrators group on all domain-joined computers by default.
   - Members of the Domain Admins group have full administrative privileges throughout the domain.
   - Full control over the domain and domain-joined machines.
-
+<br />
   🧑‍💼 Default Domain Admin User
   
   - When you first promote a server to be a Domain Controller (using dcpromo or equivalent), a default user is created: Username: Administrator.
   - Here, I used the original local admin (labuser) to create a Domain Admin User, which will be "Jane Doe".  
-
+<br />
   🔐 Permissions of a Domain Admin User
 
   Domain Admin users can:
