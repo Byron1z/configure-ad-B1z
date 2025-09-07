@@ -409,9 +409,9 @@ Run the script and observe the accounts being created,
   <img src="https://i.imgur.com/CUNZvwM.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  When finished, open ADUC and observe the accounts in the appropriate OU (Organizational Unit), which was the "EMPLOYEES" OU.　
+  When finished, open ADUC and observe the 2000 accounts in the appropriate OU (Organizational Unit), which was the "EMPLOYEES" OU file.　
   
-("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU file in ADUC)
+  ("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU file in ADUC)
 </p>
 <p>
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
