@@ -338,17 +338,21 @@ User "jane_admin" will be the Admin Account from now on.
 <br />
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
 <p>
-  Log into Client-1 as mydomain.com\jane_admin 
+  Log into Client-1 as "mydomain.com\jane_admin" - (it takes time for a Domain User to log into the PC for the 1st time) 
 </p>
 <p>
   <img src="https://i.imgur.com/RG0OK0o.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Open system properties 
+  Open System Properties by going to Settings -> System -> About ->
   
-Click “Remote Desktop” 
+  Click “Remote Desktop”, 
+  
+  Select "User Accounts" and click Add.
 
-Allow “Domain Users” access to the remote desktop 
+  Type/Allow “Domain Users” access to the remote desktop and click ok. 
+  
+  This will allow all Domain Users (non-administrative users) by default to log into the Client-1 PC.
 </p>
 <p>
   <img src="https://i.imgur.com/irf2ryg.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
