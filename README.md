@@ -271,14 +271,40 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <br />
 <h3>Create a Domain Admin User within the Domain</h3>
 <p>
-  In Active Directory Users and Computers (ADUC), create an Organizational Unit 
-(OU) called “_EMPLOYEES” 
+  In an Active Directory (AD) environment, the Domain Admin user(s) are a highly privileged account that has full control over the domain and all of its resources.
+
+  ✅ What Is the "Domain Admin User"?
+  
+  - The Domain Admin user is a member of the "Domain Admins" security group in Active Directory.
+  - This group is part of the Administrators group on all domain-joined computers by default.
+  - Members of the Domain Admins group have full administrative privileges throughout the domain.
+  - Full control over the domain and domain-joined machines.
+
+  🧑‍💼 Default Domain Admin User
+  
+  - When you first promote a server to be a Domain Controller (using dcpromo or equivalent), a default user is created: Username: Administrator.
+  - Here, I used the original local admin (labuser) to create a Domain Admin User, which will be "Jane Doe".  
+
+  🔐 Permissions of a Domain Admin User
+
+  Domain Admin users can:
+  
+  - Create, modify, and delete user accounts and groups.
+  - Manage Group Policy Objects (GPOs).
+  - Access and configure any domain-joined computer(s).
+  - Promote or Demote Domain Controllers.
+  - Control access to files, folders, printers, and other network resources.
+  - Delegate administrative tasks to others.
+
+  Let's Begin,
+  
+  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”, 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Then create a new OU named “_ADMINS” 
+  Then create a new OU named “_ADMINS”, 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/7e615a7e-6009-4fd2-b61f-3604da82d5ab" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -300,14 +326,15 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <p>
   Log out / close the connection to DC-1 and log back in as 
   
-“mydomain.com\jane_admin” 
+  “mydomain.com\jane_admin” 
 
-User "jane_admin" will be the Admin Account from now on.
+  User "jane_admin" will be the Admin Account from now on.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
 <h3>Join Client-1 to your Domain (mydomain.com)</h3>
 <p>
   Log in to Client-1 as the original local admin (labuser) and join it to the Domain.
