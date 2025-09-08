@@ -388,21 +388,21 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   You can now log into Client-1 as a normal, non-administrative user. 
 </p>
 <br />
-<h3>Now, create a bunch of additional users and attempt to log into Client-1 with one of the users</h3>
+<h3>Now, create 2000 additional users and attempt to log into Client-1 with one of the users</h3>
 <p>
-  Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users in the Domain.
+  Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users into the Domain.
 
   The script will be input into PowerShell ISE as Administrator. After the users are created, select a random user and use RDP (Remote Desktop) to log into Client-1.
   
   Login to DC-1 as "jane_admin", 
   
-Open PowerShell ISE as an Administrator,
+  Open PowerShell ISE as an Administrator,
 
-Create a new File and paste the contents of the script into it,
+  Create a new File and paste the contents of the script into it,
 
-Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
+  Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
-Run the script and observe the accounts being created,
+  Run the script and observe the accounts being created,
 </p>
 <p>
   <img src="https://i.imgur.com/ZPbcX40.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -417,7 +417,7 @@ Run the script and observe the accounts being created,
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now, attempt to log into Client-1 with one of the user accounts we created with the script. 
+  Now, attempt to log into Client-1 with one of the user accounts we created with the script, 
   
   (Take note of the password in the script)
 </p>
