@@ -101,7 +101,7 @@ Here's trivia on Static IP Addresses,
   
 - They simplify DNS management, as the IP address does not change, reducing the risk of connectivity issues. Static IPs are also essential for remote access, hosting websites, and running email servers, as they ensure that external devices can consistently connect to the correct address.
 
--  However, they require manual configuration and management, which can be more time-consuming compared to dynamic IP addresses.
+- However, they require manual configuration and management, which can be more time-consuming compared to dynamic IP addresses.
 
   Go to DC-1's Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion
   
@@ -254,7 +254,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   (can be named anything, just remember what it is) 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="80%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Click “Add a new Forest”, and name it “mydomain.com”
