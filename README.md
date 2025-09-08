@@ -313,14 +313,14 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/d37838c0-fd89-48ae-9162-f7f606a11e78" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="80%" width="90%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="70%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Add "jane_admin" to the “Domain Admins” Security Group 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="100%" width="100%" alt="Disk Sanitization Steps"/>
-  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="80%" width="90%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="70%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Log out / close the connection to DC-1 and log back in as 
