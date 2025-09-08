@@ -351,7 +351,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://i.imgur.com/1eBxFN9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Log in to the Domain Controller and verify Client-1 shows up in ADUC,
+  Log in to the Domain Controller and verify Client-1 shows up in ADUC.
 </p>
 <p>
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -432,9 +432,9 @@ Run the script and observe the accounts being created,
 <p>
 For this Active Directory lab, we completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a Forest, a Domain Administrator account, and joining Client-1 PC to the Domain.
   
-  This tutorial was to help us have a better understanding Active Directory and Domain Controllers, along with
+  This tutorial was to help us have a better understanding of Active Directory and Domain Controllers, along with
   Understanding network security protocols through VMs within Azure's Cloud.
 
-  When finished, Close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
+  When finished, close the Remote Desktop connection, delete the Resource Group(s) we created at the beginning of 
   this tutorial, and verify the Resource Group deletion to avoid unnecessary charges.
 </p>
