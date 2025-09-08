@@ -254,7 +254,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   (can be named anything, just remember what it is) 
 </p>
 <p>
-  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="80%" width="90%" alt="Disk Sanitization Steps"/>
+  <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="70%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   Click “Add a new Forest”, and name it “mydomain.com”
