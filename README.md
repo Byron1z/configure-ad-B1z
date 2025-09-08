@@ -287,8 +287,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <br />
   🔐 Permissions of a Domain Admin User
 
-  Domain Admin users can:
-  
+Domain Admin users can:
   - Create, modify, and delete user accounts and groups.
   - Manage Group Policy Objects (GPOs).
   - Access and configure any domain-joined computer(s).
@@ -365,7 +364,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <br />
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
 <p>
-  Log into Client-1 as "mydomain.com\jane_admin" - (it takes time for a Domain User to log into the PC for the 1st time) 
+  Log into Client-1 as "mydomain.com\jane_admin" - (it takes time for a Domain User/Admin to log into the PC for the 1st time) 
 </p>
 <p>
   <img src="https://i.imgur.com/RG0OK0o.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
