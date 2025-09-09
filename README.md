@@ -82,7 +82,7 @@ Create a Virtual Network and Subnet
 
 <h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1” </h3>
 <p> 
-  Make sure to create the VM in the same Region as your Virtual Network and that the VM is in the same Virtual Network we created.
+  Ensure that the VM is in the same Region as the Virtual Network and that the VM is part of the same Virtual Network that was created.
   
   ● Username: labuser 
   
@@ -213,7 +213,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 </p>
 <br />
 
-<h3>Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
+<h3>🌐 Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
 <p>
   From Client-1, attempt to ping DC-1’s Private IP address 
   
