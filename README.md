@@ -237,9 +237,11 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <br />
 
-<h3>Install Active Directory</h3>
+<h3>🌐 Install and Configure Active Directory</h3>
 <p>
-  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install Active Directory Domain Services. At "Confirmation", check restart if required. 
+  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install Active Directory Domain Services (ADDS). 
+  
+  At "Confirmation", check restart if required. 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -249,7 +251,9 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Click the Flag on the top right, and Promote DC-1 as a DC (Domain Controller): Setup a new forest as "mydomain.com"
+  Click the Flag on the top right, and Promote DC-1 as a Domain Controller (DC). 
+  
+  Set up a new forest as "mydomain.com".
   
   (can be named anything, just remember what it is) 
 </p>
@@ -263,12 +267,13 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Restart and then log back into DC-1 as user: mydomain.com\labuser
+  Restart and then log back into DC-1 as user: "mydomain.com\labuser"
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
 <h3>Create a Domain Admin User within the Domain</h3>
 <p>
   In an Active Directory (AD) environment, the Domain Admin user(s) are a highly privileged account that has full control over the domain and all of its resources.
@@ -289,7 +294,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
    Domain Admin users can:
   - Create, modify, and delete user accounts and groups.
-  - Manage Group Policy Objects (GPOs).
+  - Create and manage Group Policy Objects (GPOs) and Organizational Units (OUs).
   - Access and configure any domain-joined computer(s).
   - Promote or Demote Domain Controllers.
   - Control access to files, folders, printers, and other network resources.
@@ -387,7 +392,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   You can now log into Client-1 as a normal, non-administrative user. 
 </p>
 <br />
-<h3>Now, create 2000 additional users and attempt to log into Client-1 with one of the users</h3>
+
+<h3>Create 2000 additional users and attempt to log into Client-1 with one of the users</h3>
 <p>
   Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users into the Domain.
 
