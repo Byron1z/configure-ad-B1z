@@ -61,7 +61,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   <img src="https://i.imgur.com/KS5Ad2k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Create a Resource Group 
+Create a Resource Group 
 </p>
 <p>
 <img src="https://i.imgur.com/sweX6x4.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -80,7 +80,7 @@ Create a Virtual Network and Subnet
 </p>
 <br />
 
-<h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1” </h3>
+<h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1”</h3>
 <p> 
   Ensure that the VM is in the same Region as the Virtual Network and that the VM is part of the same Virtual Network that was created.
   
@@ -179,11 +179,11 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
   <img src="https://i.imgur.com/2DaMFi8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
-  For this issue, verify the Network Security Group (NSG) Rules: Make sure that any Network Security Group (NSG) rules permit traffic on port 53 (DNS) from Client-1 to DC-1. 
+  To solve this issue, verify the Network Security Group (NSG) Rules: Make sure that any Network Security Group (NSG) rules permit traffic on Port 53 (DNS) from Client-1 to DC-1. 
   
   If traffic is restricted, Client-1 won’t be able to resolve the domain through DC-1.
 
-  To do this, do the following steps:
+  To fix this, do the following steps:
   
 1. Search for "Network security groups" in Azure and click into "Network security groups" when it comes up. Not the classic version.
 
@@ -215,7 +215,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 <h3>🌐 Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
 <p>
-  From Client-1, attempt to ping DC-1’s Private IP address 
+  From Client-1, attempt to Ping DC-1’s Private IP address 
   
 ● Ensure the Ping succeeded 
 
