@@ -115,7 +115,9 @@ Here's trivia on Static IP Addresses,
 <br />
 
 <p>
-  Log into DC-1 VM and disable the Windows Firewall (for Testing Connectivity)
+  Log into DC-1 VM and disable the Windows Firewall 
+  
+  (for Testing Connectivity with Ping)
 </p>
 <p>
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -123,7 +125,7 @@ Here's trivia on Static IP Addresses,
 <p>
   Troubleshooting❗
   
-  In case there's trouble when pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
+  In case there's trouble when Pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
   Firewall Settings (in DC-1 VM) and
 
