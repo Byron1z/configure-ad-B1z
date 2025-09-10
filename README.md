@@ -25,6 +25,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Create Resource Group
 - Create Virtual Network
+- Set up the Domain Controller (Windows Server) VM
+- Set up the Client (Windows 10 Pro) VM
 - Ensure Connectivity between Client-1 and Domain Controller
 - Install and Configure Active Directory
 - Create a Domain Admin Account
@@ -51,7 +53,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <br />
 
-<h2>Deployment and Configuration Steps</h2>
+<h2>High-Level Deployment and Configuration Steps</h2>
 
 <h3>Setup Azure Resources</h3>
 <p>
@@ -73,7 +75,7 @@ Create a Virtual Network and Subnet
   <img src="https://github.com/user-attachments/assets/a4259798-ae22-427d-a70d-c4b1fa95d28a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  We will log in to the 2 VMs through the Remote Desktop Connection app on your PC using the VMs' Public IP Addresses. 
+  We will log in to the 2 VMs through the "Remote Desktop Connection" app on your PC using the VMs' Public IP Addresses. 
 </p>
 <p>
   <img src="https://i.imgur.com/UFdri8J.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
