@@ -105,9 +105,9 @@ Here's trivia on Static IP Addresses,
 
 - However, they require manual configuration and management, which can be more time-consuming compared to dynamic IP addresses.
 
-  Go to DC-1's Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion
+Go to DC-1's Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion
   
-  This is because this server will act as a DNS Server.
+This is because this server will act as a DNS Server.
 </p>
 <p>
   <img src="https://i.imgur.com/eXr0xTF.png" height="100%" width="90%" alt="Disk Sanitization Steps"/> 
@@ -115,9 +115,11 @@ Here's trivia on Static IP Addresses,
 <br />
 
 <p>
-  Log in to the DC-1 VM and disable the Windows Firewall 
+  Log in to the DC-1 VM and disable the Windows Firewall. 
   
-  (for Testing Connectivity with Ping)
+  Since this is a Server, it must accept Inbound Traffic. 
+  
+  (For Testing Connectivity with Ping)
 </p>
 <p>
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
