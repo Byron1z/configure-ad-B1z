@@ -115,7 +115,7 @@ Here's trivia on Static IP Addresses,
 <br />
 
 <p>
-  Log into DC-1 VM and disable the Windows Firewall 
+  Log in to the DC-1 VM and disable the Windows Firewall 
   
   (for Testing Connectivity with Ping)
 </p>
@@ -131,9 +131,9 @@ Here's trivia on Static IP Addresses,
 
   - Clicked On "Windows Defender Firewall Properties"
 
-  - Turn off all of the firewall states, EXCEPT "Public Profile".
+  - Turn off all of the firewall states, EXCEPT "Public Profile",
 
-  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and click "ALLOW"
+  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and click "ALLOW",
 
   This helped when I had trouble pinging DC-1 from Client-1.
 </p>
