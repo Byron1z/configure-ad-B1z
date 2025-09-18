@@ -399,7 +399,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <br />
 
-<h3>Create 2000 additional users and attempt to log into Client-1 with one of the users</h3>
+<h3>Create 2000 additional users & attempt to log into Client-1 with one of the users</h3>
 <p>
   Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users into the Domain.
 
