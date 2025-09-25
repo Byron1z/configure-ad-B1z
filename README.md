@@ -64,17 +64,22 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>Active Directory Setup explained</h3>
 <p>
-  🧩 How They Work Together — A Summary:
+  🧩 How They Work Together:
   
   Component - Role in the Setup
-  - Windows Server - Host OS that runs all other components
-  - DNS Server - Helps clients find services like AD
-  - Domain - A Logical group of networked computers that share a central directory database and managed by DC
-  - Domain Controller - Manages AD database and authenticates users
+  - Windows Server - Host OS that runs all other components.
+  - DNS Server - Helps clients find services like AD.
+  - Domain - A Logical group of networked computers that share a central directory database and are managed by a DC.
+  - Forest - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
+  - Domain Controller - Manages the AD database and authenticates users.
 
-To summarize,
+To Summarize,
 
-In an Active Directory home lab, Windows Server is the base operating system used to host services. When you install the Active Directory Domain Services (ADDS) role, the server becomes a Domain Controller (DC), managing a domain—a centralized environment for user and device authentication. As part of this setup, a DNS Server is typically installed to help clients locate domain resources like the DC itself. Together, these components enable a functional AD environment where devices can join the domain and authenticate through the DC using DNS resolution.
+In an Active Directory home lab, Windows Server serves as the base operating system for hosting services. When you install the Active Directory Domain Services (ADDS) role, the server becomes a Domain Controller (DC), managing a Domain — a centralized environment for user and device authentication. The first domain created also becomes the Forest root, forming the top-level container for all domains. 
+
+As part of this setup, a DNS Server is typically installed to help clients locate domain resources like the DC itself. The DNS Server is essential for AD to resolve names and services within the domain.
+
+Together, these components enable a functional AD environment where devices can join the domain and authenticate through the DC using DNS resolution.
   
 </p>
 <br />
