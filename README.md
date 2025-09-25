@@ -62,6 +62,21 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/SuvHoB1.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
+<h3>Active Directory Setup explained</h3>
+<p>
+  🧩 How They Work Together — A Summary:
+  
+  Component - Role in the Setup
+  - Windows Server - Host OS that runs all other components
+  - DNS Server - Helps clients find services like AD
+  - Domain - A Logical group of networked computers that share a central directory database and managed by DC
+  - Domain Controller - Manages AD database and authenticates users
+
+To summarize,
+
+In an Active Directory home lab, Windows Server is the base operating system used to host services. When you install the Active Directory Domain Services (ADDS) role, the server becomes a Domain Controller (DC), managing a domain—a centralized environment for user and device authentication. As part of this setup, a DNS Server is typically installed to help clients locate domain resources like the DC itself. Together, these components enable a functional AD environment where devices can join the domain and authenticate through the DC using DNS resolution.
+  
+</p>
 <br />
 
 <h2>High-Level Deployment and Configuration Steps</h2>
