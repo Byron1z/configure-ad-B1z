@@ -64,7 +64,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>Active Directory Setup explained</h3>
 <p>
-  🧩 How They Work Together:
+  <h4>🧩 How They Work Together:</h4>
   
   Component - Role in the Setup
   - Windows Server - Host OS that runs all other components.
@@ -73,7 +73,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Forest - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
   - Domain Controller - Manages the AD database and authenticates users.
 
-To Summarize,
+<h4>To Summarize,</h4>
 
 In an Active Directory home lab, Windows Server serves as the base operating system for hosting services. When you install the Active Directory Domain Services (ADDS) role, the server becomes a Domain Controller (DC), managing a Domain — a centralized environment for user and device authentication. The first domain created also becomes the Forest root, forming the top-level container for all domains. 
 
@@ -156,7 +156,7 @@ This is because this server will act as a DNS Server.
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Troubleshooting❗
+  <h4>Troubleshooting❗</h4>
   
   In case there's trouble when Pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
@@ -210,13 +210,13 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Troubleshooting❗
+  <h4>Troubleshooting❗</h4>
   
   During the lab, I had trouble saving Client-1's DNS settings to point to DC-1's Private IP Address. Here's what to do if this error appears in Azure VMs.
 
   <img src="https://i.imgur.com/2DaMFi8.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 
-  To solve this issue, verify the Network Security Group (NSG) Rules: Make sure that any Network Security Group (NSG) rules permit traffic on Port 53 (DNS) from Client-1 to DC-1. 
+  To resolve this issue, verify the Network Security Group (NSG) Rules: Ensure that any Network Security Group (NSG) rules permit traffic on Port 53 (DNS) from Client-1 to DC-1. 
   
   If traffic is restricted, Client-1 won’t be able to resolve the domain through DC-1.
 
