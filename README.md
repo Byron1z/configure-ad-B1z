@@ -337,7 +337,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   - Control access to files, folders, printers, and other network resources.
   - Delegate administrative tasks to others.
 
-  Let's Begin,
+  **Let's Begin,**
   
   In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”, 
 </p>
