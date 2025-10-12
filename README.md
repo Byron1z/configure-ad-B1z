@@ -277,7 +277,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>🌐 Install and Configure Active Directory</h3>
 <p>
-  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install Active Directory Domain Services (ADDS). 
+  
+  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install **Active Directory Domain Services (ADDS)**. 
   
   At "Confirmation", check restart if required. 
 </p>
