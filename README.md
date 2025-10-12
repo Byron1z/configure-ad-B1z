@@ -317,7 +317,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <p>
   In an Active Directory (AD) environment, the Domain Admin user(s) are a highly privileged account that has full control over the domain and all of its resources.
 
-  ✅ What Is the "Domain Admin User"?
+  ✅ What Is the **"Domain Admin User"?**
   
   - The Domain Admin user is a member of the "Domain Admins" security group in Active Directory.
   - This group is part of the Administrators group on all domain-joined computers by default.
@@ -341,7 +341,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
   **Let's Begin,**
   
-  In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”, 
+  In **Active Directory Users and Computers (ADUC)**, create an Organizational Unit (OU) called “_EMPLOYEES”, 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/90e9462a-7a88-4f37-8b21-8f5e059b5140" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -380,13 +380,14 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>Join Client-1 to your Domain (mydomain.com)</h3>
 <p>
-  Log in to Client-1 as the original local admin (labuser) and join it to the Domain.
+  
+  Log in to Client-1 as the original local admin (**labuser**) and join it to the Domain.
 
   Go to System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain
 
   Then log in as the Domain Admin with the Login credentials and password,
   
-(computer will restart) 
+(Computer / VM will restart) 
 </p>
 <p>
   <img src="https://i.imgur.com/y3MUjQ2.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -406,6 +407,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://i.imgur.com/OHOiZgq.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
 <p>
   Log into Client-1 as "mydomain.com\jane_admin" - (it takes time for a Domain User/Admin to log into the PC for the 1st time) 
@@ -444,7 +446,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
   Create a new File and paste the contents of the script into it,
 
-  Script link: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
+  **Script link**: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
   Run the script and observe the accounts being created,
 </p>
@@ -472,6 +474,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://i.imgur.com/WRyd7pe.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
 <h3>Conclusion</h3>
 <p>
 For this Active Directory lab, we completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a Forest, a Domain Administrator account, and joining Client-1 PC to the Domain.
