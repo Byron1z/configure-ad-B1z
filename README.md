@@ -165,7 +165,7 @@ This is because this server will act as a DNS Server.
 
   - Clicked On "Windows Defender Firewall Properties"
 
-  - Turn off all of the firewall states, EXCEPT "Public Profile",
+  - Turn Off all of the Firewall states, EXCEPT "Public Profile",
 
   - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and click "ALLOW",
 
