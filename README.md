@@ -473,7 +473,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   Now, attempt to log into Client-1 with one of the user accounts we created with the script,
 
-  *User*: **"BOB.LIJ"**
+  - *User*: **"BOB.LIJ"**
   
   (Take note of the password in the script!)
 </p>
