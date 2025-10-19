@@ -442,13 +442,14 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>Create 2000 additional users & attempt to log into Client-1 with one of the users</h3>
 <p>
-  Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate 2000 normal users into the Domain.
+  
+  Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate **2000 normal users** into the Domain.
 
   The script will be input into PowerShell ISE as Administrator. After the users are created, select a random user and use RDP (Remote Desktop) to log into Client-1.
   
   Login to DC-1 as "jane_admin", 
   
-  Open PowerShell ISE as an Administrator,
+  Open **PowerShell ISE** as an **Administrator**,
 
   Create a new File and paste the contents of the script into it.
 
