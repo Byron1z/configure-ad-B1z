@@ -18,8 +18,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Operating Systems Used </h2>
 
-- Windows Server (2022)
-- Windows 10 Pro (22H2)
+- **Windows Server (2022)**
+- **Windows 10 Pro (22H2)**
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
@@ -253,7 +253,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 <h3>🌐 Ensure Connectivity between the Client-1 and DC-1 (Domain Controller)</h3>
 <p>
-  From Client-1, attempt to Ping DC-1’s Private IP address 
+  From Client-1, attempt to ping DC-1’s Private IP address 
   
 ● Ensure the Ping succeeded 
 
@@ -294,19 +294,21 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   Set up a new forest as "mydomain.com".
   
-  (can be named anything, just remember what it is) 
+  (Can be named anything, just remember what it is) 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/c23e8d69-82aa-45f9-bbc3-2bce87cf30df" height="70%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Click “Add a new Forest”, and name it “mydomain.com”
+  
+  Click “Add a new Forest”, and name it **"mydomain.com"**
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Restart and then log back into DC-1 as user: "mydomain.com\labuser"
+  
+  Restart and then log back into DC-1 as user: **"mydomain.com\labuser"**
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -367,11 +369,12 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/c2159fd6-bc8a-4a65-b571-cfe0faf40153" height="70%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  
   Log out / close the connection to DC-1 and log back in as 
   
-  “mydomain.com\jane_admin” 
+  **“mydomain.com\jane_admin”** 
 
-  User "jane_admin" will be the Admin Account from now on.
+  User **"jane_admin"** will be the Admin Account from now on.
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/9e634d11-1200-46bc-ab55-d424ec3a8c29" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -383,7 +386,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   Log in to Client-1 as the original local admin (**labuser**) and join it to the Domain.
 
-  Go to System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain
+  Go to **System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain**
 
   Then log in as the Domain Admin with the Login credentials and password,
   
@@ -395,7 +398,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://i.imgur.com/1eBxFN9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Log in to the Domain Controller and verify Client-1 shows up in ADUC.
+  
+  Log in to the Domain Controller and verify Client-1 shows up in **ADUC**.
 </p>
 <p>
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -410,19 +414,21 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
 <p>
-  Log into Client-1 as "mydomain.com\jane_admin" - (it takes time for a Domain User/Admin to log into the PC for the 1st time) 
+  
+  Log into Client-1 as **"mydomain.com\jane_admin"** - (It takes time for a Domain User/Admin to log into the PC for the 1st time) 
 </p>
 <p>
   <img src="https://i.imgur.com/RG0OK0o.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Open System Properties by going to Settings -> System -> About ->
   
-  Click “Remote Desktop”, 
+  Open System Properties by going to **Settings -> System -> About ->**
   
-  Select "User Accounts" and click Add.
+  Click **“Remote Desktop”**, 
+  
+  Select **"User Accounts"** and click **Add**.
 
-  Type/Allow “Domain Users” access to the remote desktop and click ok. 
+  Type/Allow **“Domain Users”** access to the remote desktop and click ok. 
   
   This will allow all Domain Users (non-administrative users) by default to log into the Client-1 PC.
 </p>
@@ -444,7 +450,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   Open PowerShell ISE as an Administrator,
 
-  Create a new File and paste the contents of the script into it,
+  Create a new File and paste the contents of the script into it.
 
   **Script link**: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
@@ -463,9 +469,12 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Now, attempt to log into Client-1 with one of the user accounts we created with the script, 
   
-  (Take note of the password in the script)
+  Now, attempt to log into Client-1 with one of the user accounts we created with the script,
+
+  *User*: **"BOB.LIJ"**
+  
+  (Take note of the password in the script!)
 </p>
 <p>
   <img src="https://i.imgur.com/uJldo10.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
