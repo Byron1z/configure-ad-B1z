@@ -163,11 +163,11 @@ This is because this server will act as a DNS Server.
 
   Firewall Settings (in DC-1 VM) and
 
-  - Clicked On "Windows Defender Firewall Properties"
+  - Clicked On "**Windows Defender Firewall Properties**"
 
-  - Turn Off all of the Firewall states, EXCEPT "Public Profile",
+  - Turn Off all of the Firewall states, EXCEPT "**Public Profile**",
 
-  - Under the Public Profile Tab, go to "INBOUND CONNECTIONS" and click "ALLOW",
+  - Under the Public Profile Tab, go to "**INBOUND CONNECTIONS**" and click "**ALLOW**",
 
   This helped when I had trouble pinging DC-1 from Client-1.
 </p>
@@ -201,11 +201,14 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://github.com/user-attachments/assets/5ced891b-37c2-4251-8ca3-61ba64b1f6d8" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+  
   Copy Private IP Address from DC-1 VM
   
-  In the Azure portal, navigate to Client-1 VM, Networking -> Network Settings -> Client-1's Network Interface/IP Configuration -> DNS servers -> Custom, and paste the DC-1's Private IP Address, then click save. 
+  In the Azure portal, navigate to Client-1 VM, 
   
-  Doing this allows Client-1 to join the DC-1's DNS server.
+  **Networking -> Network Settings -> Client-1's Network Interface/IP Configuration -> DNS servers -> Custom**, and paste the DC-1's **Private IP Address**, then click save. 
+  
+  Doing this allows Client-1 to join the DC-1's **DNS Server**.
 </p>
 <p>
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
