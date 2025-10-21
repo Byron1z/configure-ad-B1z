@@ -6,7 +6,7 @@
 This tutorial outlines the implementation of on-premises Active Directory within Azure Virtual Machines.<br />
 
 
-<h2>Software and Technologies Used</h2>
+<h2>💻⚙️ Software and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Windows Server (2022)
