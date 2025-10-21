@@ -43,11 +43,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   **Key Components of AD**
   
-  - Domain - Logical group of objects
-  - Domain Controller - Authenticates Logins
-  - Forest - Collection of Domains 
-  - OU - Organize users & computers
-  - Group Policy - Apply rules & settings
+  - **Domain** - Logical group of objects
+  - **Domain Controller** - Authenticates Logins
+  - **Forest** - Collection of Domains 
+  - **OU** - Organize users & computers
+  - **Group Policy** - Apply rules & settings
   
 </p>
 <h3>Familiar Use</h3>
@@ -65,14 +65,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 </p>
 <h3>Active Directory Setup explained</h3>
 <p>
+  
   <h4>🧩 How They Work Together:</h4>
   
   Component - Role in the Setup
-  - Windows Server - Host OS that runs all other components.
-  - DNS Server - Helps clients find services like AD.
-  - Domain - A Logical group of networked computers that share a central directory database and are managed by a DC.
-  - Forest - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
-  - Domain Controller - Manages the AD database and authenticates users.
+  - **Windows Server** - Host OS that runs all other components.
+  - **DNS Server** - Helps clients find services like AD.
+  - **Domain** - A Logical group of networked computers that share a central directory database and are managed by a DC.
+  - **Forest** - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
+  - **Domain Controller** - Manages the AD database and authenticates users.
 
 <h4>To Summarize,</h4>
 
@@ -115,12 +116,13 @@ Create a Virtual Network and Subnet
 <br />
 
 <h3>Create the Domain Controller (Windows Server 2022) VM in Azure named “DC-1”</h3>
-<p> 
+<p>
+  
   Ensure that the VM is in the same Region as the Virtual Network and that the VM is part of the same Virtual Network that was created.
   
-  ● Username: labuser 
+  ● Username: **labuser**
   
-  ● Password: Cyberlab123!
+  ● Password: **Cyberlab123!**
 </p>
 <p>
 <img src="https://i.imgur.com/xwzAG8x.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -181,9 +183,9 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
   Give it the same Username & Password as DC-1, for convenience,
   
-  ● Username: labuser 
+  ● Username: **labuser** 
   
-  ● Password: Cyberlab123!
+  ● Password: **Cyberlab123!**
 </p>
 <p>
   <img src="https://i.imgur.com/NVRLbrO.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
@@ -266,7 +268,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/97f3dd37-df09-4fab-9d30-2a3b493616f9" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  From Client-1, open PowerShell and run "ipconfig /all" 
+  
+  From Client-1, open PowerShell as Admin and run `ipconfig /all` 
   
 ● The output for the Client-1's DNS settings should show DC-1’s Private IP Address
 </p>
@@ -281,7 +284,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 <h3>🌐 Install and Configure Active Directory</h3>
 <p>
   
-  Log in to DC-1, go to Server Manager, click "Add Roles and Features" on the Dashboard, on "Server Selection" check DC-1, and install **Active Directory Domain Services (ADDS)**. 
+  Log in to DC-1, go to Server Manager, click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" check DC-1, and install **Active Directory Domain Services (ADDS)**. 
   
   At "Confirmation", check restart if required. 
 </p>
