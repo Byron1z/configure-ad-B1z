@@ -16,7 +16,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Active Directory Users and Computers (ADUC)
 - PowerShell
 
-<h2>Operating Systems Used </h2>
+<h2>💻 Operating Systems Used </h2>
 
 - **Windows Server (2022)**
 - **Windows 10 Pro (22H2)**
