@@ -252,7 +252,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
 5. Click the checkbox next to "Client-1" and "DC-1" and click "Restart" in the top bar,
 
-  (This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1.)
+  (*This helped me resolve the issue. After resolving the issue, do the process of pasting DC-1's Private IP Address to Client-1's DNS servers, and restart Client-1*.)
 
   Also, restart DC-1 again just in case.
 </p>
