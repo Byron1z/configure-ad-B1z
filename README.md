@@ -130,7 +130,7 @@ Create a Virtual Network and Subnet
 </p>
 <p>
   
-After creating the VM, set the domain controller’s NIC private IP address to "**Static**", meaning the private IP address won’t change.
+After creating the VM, set the domain controller’s NIC private IP address to "**Static**", meaning the **Private IP address won’t change**.
 
 Here's trivia on Static IP Addresses, 
 
@@ -138,7 +138,7 @@ Here's trivia on Static IP Addresses,
   
 - They simplify DNS management, as the IP address does not change, reducing the risk of connectivity issues. Static IPs are also essential for remote access, hosting websites, and running email servers, as they ensure that external devices can consistently connect to the correct address.
 
-- However, they require manual configuration and management, which can be more time-consuming compared to dynamic IP addresses.
+- However, they require manual configuration and management, which can be more time-consuming compared to **Dynamic IP addresses**.
 
 Go to DC-1's **Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion**
   
@@ -151,13 +151,14 @@ This is because this server will act as a DNS Server.
 
 <p>
   
-  Log in to the DC-1 VM and **disable** the Windows Firewall. 
+  Log in to the DC-1 VM and **Disable** the Windows Firewall. 
   
   Since this is a Server, it must **accept Inbound Traffic**. 
   
   (For Testing Connectivity with Ping)
 </p>
 <p>
+<img src="https://i.imgur.com/YaFNaGN.png" height="80%" width="90%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/0uCdkF7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
