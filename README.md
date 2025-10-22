@@ -299,7 +299,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://github.com/user-attachments/assets/947620f1-d4fe-4c61-ad92-fb113b6f1b6a" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Click the Flag on the top right, and Promote DC-1 as a Domain Controller (DC). 
+  
+  Click the *Flag* on the top right, and Promote DC-1 as a **Domain Controller (DC)**. 
   
   Set up a new forest as "mydomain.com".
   
