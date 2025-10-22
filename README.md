@@ -219,7 +219,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  <h4>Troubleshooting❗️⚠️</h4>
+  <h4>Troubleshooting ❗️⚠️</h4>
   
   During the lab, I had trouble saving Client-1's DNS settings to point to DC-1's Private IP Address. Here's what to do if this error appears in Azure VMs.
 
