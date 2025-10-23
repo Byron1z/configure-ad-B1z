@@ -9,8 +9,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>💻⚙️ Software and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Windows Server (2022)
-- Windows 10 Pro (22H2)
+- **Windows Server (2022)**
+- **Windows 10 Pro (22H2)**
 - Remote Desktop
 - **Active Directory Domain Services (ADDS)**
 - **Active Directory Users and Computers (ADUC)**
