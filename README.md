@@ -423,7 +423,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <br />
 
-<h3>Setup Remote Desktop for non-administrative users on Client-1 </h3>
+<h3>🖥 Setup Remote Desktop for non-administrative users on Client-1 </h3>
 <p>
   
   Log into Client-1 as **"mydomain.com\jane_admin"** - (It takes time for a Domain User/Admin to log into the PC for the 1st time) 
@@ -451,7 +451,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <br />
 
-<h3>Create 2000 additional users & attempt to log into Client-1 with one of the users</h3>
+<h3>🔵 Create 2000 additional users & attempt to log into Client-1 with one of the users</h3>
 <p>
   
   Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate **2000 normal users** into the Domain.
@@ -498,7 +498,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>Conclusion</h3>
 <p>
-For this Active Directory lab, we completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a Forest, a Domain Administrator account, and joining Client-1 PC to the Domain.
+
+For this Active Directory lab, we completed the Active Directory Deployment and Configuration phase. By configuring Active Directory on the Domain Controller, we established our infrastructure by creating a **Forest**, a **Domain Administrator account**, and **joining Client-1 PC to the Domain**.
   
   This tutorial was to help us have a better understanding of Active Directory, Domain environments, GPOs, along with
   Understanding network security protocols through VMs within Azure's Cloud.
