@@ -334,7 +334,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   - The Domain Admin user is a member of the "Domain Admins" security group in Active Directory.
   - This group is part of the Administrators group on all domain-joined computers by default.
-  - Members of the Domain Admins group have full administrative privileges throughout the domain.
+  - **Members of the Domain Admins group have full administrative privileges throughout the domain**.
   - Full control over the domain and domain-joined machines.
 <br />
   🧑‍💼 Default Domain Admin User
