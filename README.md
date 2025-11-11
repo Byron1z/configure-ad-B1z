@@ -392,7 +392,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <br />
 
-<h3>Join Client-1 to your Domain (mydomain.com)</h3>
+<h3>🟢 Join Client-1 to your Domain (mydomain.com)</h3>
 <p>
   
   Log in to Client-1 as the original local admin (**labuser**) and join it to the Domain.
@@ -410,7 +410,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   
-  Log in to the Domain Controller and verify Client-1 shows up in **ADUC**.
+  Log in to the DC-1 / Domain Controller and verify Client-1 PC shows up in **ADUC**.
 </p>
 <p>
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
