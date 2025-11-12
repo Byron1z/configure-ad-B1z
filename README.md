@@ -473,7 +473,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   <img src="https://i.imgur.com/CUNZvwM.png" height="70%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  When finished, open ADUC and observe the 2000 accounts in the appropriate OU (Organizational Unit), which was the "EMPLOYEES" OU file.　
+  When finished, open ADUC and observe the 2000 accounts in the appropriate OU (Organizational Unit), which was the "_EMPLOYEES" OU file.　
   
   ("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU file in ADUC)
 </p>
