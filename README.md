@@ -243,7 +243,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
     - Click "Add"
 
-    - Leave everything alone except in the "**Destination port ranges**" field; change the number to **53**, and in the "Priority" field, change it to **290**.
+    - Leave everything alone except in the "**Destination port ranges**" field; change the number to **53**, and in the "**Priority**" field, change it to **290**.
 
     - Click the "Save" button
 
