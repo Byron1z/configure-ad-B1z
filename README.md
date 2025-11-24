@@ -220,6 +220,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   <img src="https://i.imgur.com/xpUQSkV.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
   <h4>Troubleshooting ❗️⚠️</h4>
   
   During the lab, I had trouble saving Client-1's DNS settings to point to DC-1's Private IP Address. Here's what to do if this error appears in Azure VMs.
@@ -238,15 +239,15 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
     - Click the "Settings" dropdown menu
 
-    - Click "Inbound security rules"
+    - Click "**Inbound security rules**"
 
     - Click "Add"
 
-    - Leave everything alone except in the "Destination port ranges" field; change the number to 53, and in the "Priority" field, change it to 290.
+    - Leave everything alone except in the "**Destination port ranges**" field; change the number to **53**, and in the "Priority" field, change it to **290**.
 
     - Click the "Save" button
 
-    - Then click "Outbound security rules" and complete the same process again,
+    - Then click "**Outbound security rules**" and complete the same process again,
 
 3. Then click into "dc-1-nsg" (for DC-1's VM) and do the same process again.
 
