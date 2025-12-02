@@ -75,7 +75,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - **Forest** - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
   - **Domain Controller** - Manages the AD database and authenticates users.
 
-<h4>🔷️To summarize,</h4>
+<h4>🔷️ To summarize,</h4>
 
 In an Active Directory home lab, Windows Server serves as the base operating system for hosting services. When you install the Active Directory Domain Services (ADDS) role, the server becomes a Domain Controller (DC), managing a Domain — a centralized environment for user and device authentication. The first domain created also becomes the Forest root, forming the top-level container for all domains. 
 
