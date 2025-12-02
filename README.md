@@ -32,7 +32,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Create a Domain Admin Account
 - Join Client-1 to the Domain Controller (mydomain.com)
 - Set up Remote Desktop for non-administrative users on Client-1
-- Create 2000 users and attempt to log into Client-1 with one of the users
+- Create 2000 users & attempt to log into Client-1 with one of the users
 
 <h2>What is Active Directory?</h2>
 <p>
