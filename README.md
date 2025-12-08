@@ -141,7 +141,7 @@ Here's trivia on Static IP Addresses,
 
 - However, they require manual configuration and management, which can be more time-consuming compared to **Dynamic IP addresses**.
 
-Go to DC-1's **Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion**
+🔹️ Go to DC-1's **Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion**
   
 This is because this server will act as a DNS Server.
 </p>
@@ -210,7 +210,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   
   Copy Private IP Address from DC-1 VM
   
-  In the Azure portal, navigate to Client-1 VM, 
+  🔹️ In the Azure portal, navigate to Client-1 VM, 
   
   **Networking -> Network Settings -> Client-1's Network Interface/IP Configuration -> DNS servers -> Custom**, and paste the DC-1's **Private IP Address**, then click save. 
   
