@@ -88,7 +88,7 @@ Together, these components enable a functional AD environment where devices can 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-<h3>Setup Azure Resources</h3>
+<h3>🔵 Setup Azure Resources</h3>
 <p>
   We'll be using Microsoft Azure, so log in to your Azure Account.
 </p>
