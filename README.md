@@ -179,7 +179,7 @@ This is because this server will act as a DNS Server.
 </p>
 <br />
 
-<h3>Setup "Client-1" (Windows 10 Pro) VM in Azure</h3>
+<h3>🔷️ Setup "Client-1" (Windows 10 Pro) VM in Azure</h3>
 <p>
 Create the Client VM (Windows 10 Pro) named “Client-1” 
   
