@@ -68,7 +68,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   <h4>🧩 How They Work Together:</h4>
   
-  Component - Role in the Setup
+  🔹️ Component - Role in the Setup
   - **Windows Server** - Host OS that runs all other components.
   - **DNS Server** - Helps clients find services like AD.
   - **Domain** - A Logical group of networked computers that share a central directory database and are managed by a DC.
