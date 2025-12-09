@@ -38,7 +38,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>
   <img src="https://i.imgur.com/gLlT8B8.png" height="90%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
-<h3>Active Directory Components</h3>
+<h3>🔵 Active Directory Components</h3>
 <p>
   
   **Key Components of AD**
