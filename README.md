@@ -466,7 +466,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
   Create a new File and paste the contents of the script into it.
 
-  **Script link**: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
+  **🔹️ Script link**: https://github.com/Xinloiazn/configure-ad/blob/main/adscript.ps1
 
   Run the script and observe the accounts being created,
 </p>
