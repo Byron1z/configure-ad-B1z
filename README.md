@@ -41,7 +41,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h3>🔵 Active Directory Components</h3>
 <p>
   
-  **🔷️ Key Components of AD**
+  **🔹️ Key Components of AD**
   
   - **Domain** - Logical group of objects
   - **Domain Controller** - Authenticates Logins
