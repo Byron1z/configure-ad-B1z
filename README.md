@@ -329,7 +329,8 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 <h3>👨‍💻 Create a Domain Admin User within the Domain</h3>
 <p>
-  In an Active Directory (AD) environment, the Domain Admin user(s) are a highly privileged account that has full control over the domain and all of its resources.
+
+  In an Active Directory (AD) environment, the **Domain Admin user(s)** are a highly privileged account that has full control over the domain and all of its resources.
 
   ✅ What Is the **"Domain Admin User"?**
   
