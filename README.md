@@ -398,7 +398,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
   
   Log in to Client-1 as the original local admin (**labuser**) and join it to the Domain.
 
-  Go to **System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain**
+  🔹️ Go to **System -> About -> Rename this PC(advanced) -> System Properties -> Computer Name -> Change -> Domain**
 
   Then log in as the Domain Admin with the Login credentials and password,
   
@@ -434,7 +434,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 </p>
 <p>
   
-  Open System Properties by going to **Settings -> System -> About ->**
+  🔹️ Open System Properties by going to **Settings -> System -> About ->**
   
   Click **“Remote Desktop”**, 
   
