@@ -233,7 +233,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
 
   To fix this, do the following steps:
   
-1. Search for "Network security groups" in Azure and click into "Network security groups" when it comes up. Not the classic version.
+1. Search for "Network security groups" in Azure and click into "Network security groups" when it comes up (Not the classic version).
 
 2. Click into "client-1-nsg" (or whatever it's named) and do the following steps:
 
