@@ -165,11 +165,11 @@ This is because this server will act as a DNS Server.
 <p>
   <h4>Troubleshooting❗</h4>
   
-  In case there's trouble when Pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
+  ▫️ In case there's trouble when Pinging DC-1 from Client-1 in PowerShell in the later steps, go back into the 
 
   Firewall Settings (in DC-1 VM) and
 
-  - Clicked On "**Windows Defender Firewall Properties**"
+  - Click On "**Windows Defender Firewall Properties**"
 
   - Turn Off all of the Firewall states, EXCEPT "**Public Profile**",
 
