@@ -315,7 +315,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
 </p>
 <p>
   
-  Click “Add a new Forest”, and name it **"mydomain.com"**
+  Click “**Add a new Forest**”, and name it "mydomain.com",
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/33e416ba-7830-4786-8f82-1f6559223fe5" height="100%" width="100%" alt="Disk Sanitization Steps"/>
