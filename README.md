@@ -231,7 +231,7 @@ Create the Client VM (Windows 10 Pro) named “Client-1”
   
   If traffic is restricted, Client-1 won’t be able to resolve the domain through DC-1.
 
-  To fix this, do the following steps:
+  ◻️ To fix this, do the following steps:
   
 1. Search for "Network security groups" in Azure and click into "Network security groups" when it comes up (Not the classic version).
 
