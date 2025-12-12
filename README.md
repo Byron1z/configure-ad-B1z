@@ -294,7 +294,7 @@ Open PowerShell as Administrator and Ping the DC-1 Private IP address
 
 Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" check DC-1, and install **Active Directory Domain Services (ADDS)**. 
   
-  At "Confirmation", check restart if required. 
+  At "Confirmation", check✅️ restart if required. 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/21d4672d-5f52-41cd-a4ca-744e6bf5796b" height="100%" width="100%" alt="Disk Sanitization Steps"/>
