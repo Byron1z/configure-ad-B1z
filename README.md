@@ -305,7 +305,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
 </p>
 <p>
   
-  Click the *(**Flag** 🏳⚠️)* on the top right, and Promote DC-1 as a **Domain Controller (DC)**. 
+  Click the **(*Flag* 🏳⚠️)** on the top right, and Promote DC-1 as a **Domain Controller (DC)**. 
   
   Set up a new forest as "mydomain.com".
   
