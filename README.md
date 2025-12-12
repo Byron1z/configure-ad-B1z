@@ -12,6 +12,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - **Windows Server (2022)**
 - **Windows 10 Pro (22H2)**
 - Remote Desktop
+- **Windows Server Manager**
 - **Active Directory Domain Services (ADDS)**
 - **Active Directory Users and Computers (ADUC)**
 - **PowerShell**
