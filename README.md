@@ -155,7 +155,7 @@ This is because this server will act as a DNS Server.
   
   Log in to the DC-1 VM and **Disable** the Windows Firewall. 
   
-  Since this is a Server, it must **accept Inbound Traffic❕️**. 
+  Since this is a Server, it must **accept Inbound Traffic**. 
   
   (For Testing Connectivity with Ping)
 </p>
