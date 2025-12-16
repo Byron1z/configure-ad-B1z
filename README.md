@@ -153,7 +153,7 @@ This is because this server will act as a DNS Server.
 
 <p>
   
-  Log in to the DC-1 VM and **Disable** the Windows Firewall. 
+  🔹️ Log in to the DC-1 VM and **Disable** the Windows Firewall. 
   
   Since this is a Server, it must **accept Inbound Traffic**. 
   
