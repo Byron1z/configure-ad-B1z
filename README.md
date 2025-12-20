@@ -89,7 +89,7 @@ Together, these components enable a functional AD environment where devices can 
 
 <h2>High-Level Deployment and Configuration Steps</h2>
 
-<h3>🔵 Setup Azure Resources</h3>
+<h3>🔵 Set up Azure Resources</h3>
 <p>
   We'll be using Microsoft Azure, so log in to your Azure Account.
 </p>
@@ -117,7 +117,7 @@ Create a Virtual Network and Subnet
 </p>
 <br />
 
-<h3>🔷️ Setup the Domain Controller (Windows Server 2022) VM in Azure named “DC-1”</h3>
+<h3>🔷️ Set up the Domain Controller (Windows Server 2022) VM in Azure named “DC-1”</h3>
 <p>
   
   Ensure that the VM is in the same Region as the Virtual Network and that the VM is part of the same Virtual Network that was created.
@@ -180,7 +180,7 @@ This is because this server will act as a DNS Server.
 </p>
 <br />
 
-<h3>🔷️ Setup "Client-1" (Windows 10 Pro) VM in Azure</h3>
+<h3>🔷️ Set up "Client-1" (Windows 10 Pro) VM in Azure</h3>
 <p>
 Create the Client VM (Windows 10 Pro) named “Client-1” 
   
