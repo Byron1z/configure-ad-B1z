@@ -47,7 +47,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - **Domain** - Logical group of objects
   - **Domain Controller** - Authenticates Logins
   - **Forest** - Collection of Domains 
-  - **OU** - Organize users & computers
+  - **OU** - Helps organize users, groups & computers
   - **Group Policy** - Apply rules & settings
   
 </p>
