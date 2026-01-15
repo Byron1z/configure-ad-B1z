@@ -72,8 +72,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   🔹️ Component - Role in the Setup
   - **Windows Server** - Host OS that runs all other components.
   - **DNS Server** - Helps clients find services like AD.
-  - **Domain** - A Logical group of networked computers that share a central directory database and are managed by a DC.
   - **Forest** - the highest-level container in Active Directory. It can contain one or more domains that trust each other.
+  - **Domain** - A Logical group of networked computers that share a central directory database and are managed by a DC.
   - **Domain Controller** - Manages the AD database and authenticates users.
 
 <h4>🔷️ To summarize,</h4>
