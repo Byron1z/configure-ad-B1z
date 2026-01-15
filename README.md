@@ -44,9 +44,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   
   **🔹️ Key Components of AD**
   
+  - **Forest** - Collection of Domains
   - **Domain** - Logical group of objects
-  - **Domain Controller** - Authenticates Logins
-  - **Forest** - Collection of Domains 
+  - **Domain Controller** - Authenticates Logins 
   - **OU (Organizational Unit)** - Helps organize users, groups & computers
   - **Group Policy (GPO)** - Apply rules, enforce security & configuration settings
   
