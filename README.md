@@ -421,7 +421,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Create a new OU named “_CLIENTS” and drag Client-1 into there
+  Then, Create a new OU named “_CLIENTS” and drag Client-1 into there
 </p>
 <p>
   <img src="https://i.imgur.com/OHOiZgq.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
