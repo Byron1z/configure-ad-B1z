@@ -378,7 +378,8 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
   <img src="https://github.com/user-attachments/assets/40311315-9b81-4edf-a531-c8128cb654ee" height="70%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-  Add "jane_admin" to the “Domain Admins” Security Group 
+
+  Add "jane_admin" to the “**Domain Admins**” Security Group 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/97669e85-5cd0-41c8-b3d3-8e09a4d7143d" height="100%" width="100%" alt="Disk Sanitization Steps"/>
