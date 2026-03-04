@@ -144,7 +144,7 @@ Here's trivia on Static IP Addresses,
 
 🔹️ Go to DC-1's **Networking tab -> Network Settings -> ipconfig1(primary) -> ipconfig1 -> Edit IP configuartion**
   
-This is because this server will act as a DNS Server.
+(This is because this server will act as a **DNS Server**).
 </p>
 <p>
   <img src="https://i.imgur.com/eXr0xTF.png" height="100%" width="90%" alt="Disk Sanitization Steps"/> 
