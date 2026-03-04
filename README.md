@@ -492,7 +492,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
 
   - *User*: **"BOB.LIJ"**
   
-  (Take note of the password in the script!)
+  (Take note of the password in the script❗️)
 </p>
 <p>
   <img src="https://i.imgur.com/uJldo10.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
