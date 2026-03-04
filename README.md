@@ -481,7 +481,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
 <p>
   When finished, open ADUC and observe the 2000 accounts in the appropriate OU (Organizational Unit), which was the "_EMPLOYEES" OU file.　
   
-  ("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU file in ADUC)
+  ("_EMPLOYEES") - (Make sure the OU is spelled correctly since this particular script will search for the correct OU file in ADUC❕️)
 </p>
 <p>
    <img src="https://i.imgur.com/7UaNiRC.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
