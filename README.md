@@ -422,7 +422,7 @@ This Account login will be considered in "**Domain Context**" or a **Domain Acco
 </p>
 <p>
   
-  Log in to the DC-1 / Domain Controller and verify Client-1 PC shows up in **ADUC**.
+  Next, Log in to the DC-1 / Domain Controller and verify Client-1 PC shows up in **ADUC**.
 </p>
 <p>
   <img src="https://i.imgur.com/ndAcxiW.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
