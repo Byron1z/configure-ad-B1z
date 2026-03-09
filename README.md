@@ -468,7 +468,7 @@ This Account login will be considered in "**Domain Context**" or a **Domain Acco
   
   Lastly, let's verify that normal users can use RDP (Remote Desktop) to log into Client-1. We will use a script to generate **2000 normal users** into the Domain.
 
-  The script will be input into PowerShell ISE as Administrator. After the users are created, select a random user and use RDP (Remote Desktop) to log into Client-1.
+  The script will be input into **PowerShell ISE** as Administrator. After the users are created, select a random user and use RDP (Remote Desktop) to log into Client-1.
   
   Login to DC-1 as "jane_admin", 
   
