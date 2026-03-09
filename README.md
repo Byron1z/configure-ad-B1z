@@ -418,7 +418,7 @@ This Account login will be considered in "**Domain Context**" or a **Domain Acco
 </p>
 <p>
 
-(Since we Configured the DNS settings of Client-1 to point to DC-1's Private IP, it was able to find the Domain Controller.) 
+(Since we Configured the DNS settings of Client-1 to point to DC-1's Private IP, it was able to find the Domain Controller✅️.) 
 </p>
 <p>
   
