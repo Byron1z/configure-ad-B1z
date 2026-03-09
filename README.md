@@ -325,7 +325,7 @@ Click "**Add Roles and Features**" on the Dashboard, on "**Server Selection**" c
   
   Restart and then log back into DC-1 as user: **"mydomain.com\labuser"**
 
-This Account login will be considered in "**Domain Context**" or a **Domain Account**, different from the normal Local User Account. 
+This Account login will be considered in "**Domain Context**" or a **Domain Account** to login in this Specific Domain, different from the normal Local User Account. 
 </p>
 <p>
   <img src="https://github.com/user-attachments/assets/18d08719-69e2-4e64-935a-a60694c540c7" height="80%" width="80%" alt="Disk Sanitization Steps"/>
