@@ -417,6 +417,10 @@ This Account login will be considered in "**Domain Context**" or a **Domain Acco
   <img src="https://i.imgur.com/1eBxFN9.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+
+(Since we Configured the DNS settings of Client-1 to point to DC-1's Private IP, it was able to find the Domain Controller.) 
+</p>
+<p>
   
   Log in to the DC-1 / Domain Controller and verify Client-1 PC shows up in **ADUC**.
 </p>
